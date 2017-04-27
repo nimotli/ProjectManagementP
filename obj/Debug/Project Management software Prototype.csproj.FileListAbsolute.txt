@@ -1,0 +1,9 @@
+c:\users\asus\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\bin\Debug\Project Management software Prototype.exe.config
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\bin\Debug\Project Management software Prototype.exe
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\bin\Debug\Project Management software Prototype.pdb
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project Management software Prototype.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project_Management_software_Prototype.Form1.resources
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project_Management_software_Prototype.Properties.Resources.resources
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project Management software Prototype.csproj.GenerateResource.Cache
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project Management software Prototype.exe
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project Management software Prototype.pdb
