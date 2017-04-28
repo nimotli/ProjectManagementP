@@ -7,3 +7,8 @@ C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software 
 C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project Management software Prototype.csproj.GenerateResource.Cache
 C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project Management software Prototype.exe
 C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project Management software Prototype.pdb
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project_Management_software_Prototype.DashBoardUserControl.resources
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project_Management_software_Prototype.CommandUserControl.resources
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project_Management_software_Prototype.ClientUserControl.resources
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project_Management_software_Prototype.ProductUserControl.resources
+C:\Users\ASUS\documents\visual studio 2015\Projects\Project Management software Prototype\Project Management software Prototype\obj\Debug\Project_Management_software_Prototype.ProviderUserControl.resources

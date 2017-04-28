@@ -14,9 +14,9 @@ namespace Project_Management_software_Prototype
     public partial class Form1 : Form
     {
         bool menuShowen = false;
-        Color buttonDefaultColor = Color.FromArgb(34, 52, 70);
+        Color buttonDefaultColor = Color.FromArgb(17, 17, 17);
         Color buttonSelectedColor = Color.FromArgb(52, 152, 219);
-        private bool mouseDown=false;
+        private bool mouseDown = false;
         private Point lastLocation;
 
 
@@ -109,8 +109,11 @@ namespace Project_Management_software_Prototype
         }
         public void changeSelectedButton(int index)
         {
-            if (index==0)
+            if (index == 0)
             {
+
+                DashBoardUserControl.Instance.BringToFront();
+
                 DashBoardbtn.BackColor = buttonSelectedColor;
                 commandbtn.BackColor = buttonDefaultColor;
                 productbtn.BackColor = buttonDefaultColor;
@@ -122,11 +125,14 @@ namespace Project_Management_software_Prototype
                 propic.BackColor = buttonDefaultColor;
                 clipic.BackColor = buttonDefaultColor;
                 provpic.BackColor = buttonDefaultColor;
-               
+
             }
-            
+
             else if (index == 1)
             {
+
+                CommandUserControl.Instance.BringToFront();
+
                 DashBoardbtn.BackColor = buttonDefaultColor;
                 commandbtn.BackColor = buttonSelectedColor;
                 productbtn.BackColor = buttonDefaultColor;
@@ -141,6 +147,7 @@ namespace Project_Management_software_Prototype
             }
             else if (index == 2)
             {
+                ProductUserControl.Instance.BringToFront();   
                 DashBoardbtn.BackColor = buttonDefaultColor;
                 commandbtn.BackColor = buttonDefaultColor;
                 productbtn.BackColor = buttonSelectedColor;
@@ -155,6 +162,9 @@ namespace Project_Management_software_Prototype
             }
             else if (index == 3)
             {
+
+                ClientUserControl.Instance.BringToFront();
+                
                 DashBoardbtn.BackColor = buttonDefaultColor;
                 commandbtn.BackColor = buttonDefaultColor;
                 productbtn.BackColor = buttonDefaultColor;
@@ -169,6 +179,9 @@ namespace Project_Management_software_Prototype
             }
             else if (index == 4)
             {
+
+                ProviderUserControl.Instance.BringToFront();
+                
                 DashBoardbtn.BackColor = buttonDefaultColor;
                 commandbtn.BackColor = buttonDefaultColor;
                 productbtn.BackColor = buttonDefaultColor;
@@ -185,7 +198,7 @@ namespace Project_Management_software_Prototype
 
         private void showHideMenubtn_Click(object sender, EventArgs e)
         {
-            if(menuShowen)
+            if (menuShowen)
             {
                 hideMenu.Start();
                 menuShowen = false;
@@ -201,9 +214,9 @@ namespace Project_Management_software_Prototype
 
         private void showMenu_Tick(object sender, EventArgs e)
         {
-            
-            Size newSize=new Size();
-            if (MenuPanel.Size.Width<=185)
+
+            Size newSize = new Size();
+            if (MenuPanel.Size.Width <= 185)
             {
                 newSize.Height = MenuPanel.Size.Height;
                 newSize.Width = MenuPanel.Size.Width + 5;
@@ -223,7 +236,7 @@ namespace Project_Management_software_Prototype
 
         private void hideMenu_Tick(object sender, EventArgs e)
         {
-            
+
             Size newSize = new Size();
             if (MenuPanel.Size.Width >= 50)
             {
@@ -240,6 +253,46 @@ namespace Project_Management_software_Prototype
                 }
                 showHideMenubtn.Enabled = true;
                 hideMenu.Stop();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            loadUserControls();
+            changeSelectedButton(0);
+        }
+
+        public void loadUserControls()
+        {
+            if (!MainPanel.Contains(DashBoardUserControl.Instance))
+            {
+                MainPanel.Controls.Add(DashBoardUserControl.Instance);
+                DashBoardUserControl.Instance.Dock = DockStyle.Fill;
+                DashBoardUserControl.Instance.BringToFront();
+            }
+            if (!MainPanel.Contains(CommandUserControl.Instance))
+            {
+                MainPanel.Controls.Add(CommandUserControl.Instance);
+                CommandUserControl.Instance.Dock = DockStyle.Fill;
+                CommandUserControl.Instance.BringToFront();
+            }
+            if (!MainPanel.Contains(ProductUserControl.Instance))
+            {
+                MainPanel.Controls.Add(ProductUserControl.Instance);
+                ProductUserControl.Instance.Dock = DockStyle.Fill;
+                ProductUserControl.Instance.BringToFront();
+            }
+            if (!MainPanel.Contains(ClientUserControl.Instance))
+            {
+                MainPanel.Controls.Add(ClientUserControl.Instance);
+                ClientUserControl.Instance.Dock = DockStyle.Fill;
+                ClientUserControl.Instance.BringToFront();
+            }
+            if (!MainPanel.Contains(ProviderUserControl.Instance))
+            {
+                MainPanel.Controls.Add(ProviderUserControl.Instance);
+                ProviderUserControl.Instance.Dock = DockStyle.Fill;
+                ProviderUserControl.Instance.BringToFront();
             }
         }
     }

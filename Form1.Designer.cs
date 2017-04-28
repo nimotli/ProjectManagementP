@@ -30,27 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             this.MenuPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.showHideMenubtn = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.provpic = new System.Windows.Forms.PictureBox();
-            this.clipic = new System.Windows.Forms.PictureBox();
-            this.Dashpic = new System.Windows.Forms.PictureBox();
-            this.propic = new System.Windows.Forms.PictureBox();
-            this.Compic = new System.Windows.Forms.PictureBox();
             this.providerbtn = new System.Windows.Forms.Button();
             this.clientbtn = new System.Windows.Forms.Button();
             this.productbtn = new System.Windows.Forms.Button();
             this.commandbtn = new System.Windows.Forms.Button();
             this.DashBoardbtn = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.HeaderPanel = new System.Windows.Forms.Panel();
             this.reducebtn = new System.Windows.Forms.Label();
             this.Closebtn = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.showMenu = new System.Windows.Forms.Timer(this.components);
             this.hideMenu = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.showHideMenubtn = new System.Windows.Forms.PictureBox();
+            this.provpic = new System.Windows.Forms.PictureBox();
+            this.clipic = new System.Windows.Forms.PictureBox();
+            this.Dashpic = new System.Windows.Forms.PictureBox();
+            this.propic = new System.Windows.Forms.PictureBox();
+            this.Compic = new System.Windows.Forms.PictureBox();
             this.MenuPanel.SuspendLayout();
+            this.MainPanel.SuspendLayout();
+            this.HeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showHideMenubtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.provpic)).BeginInit();
@@ -58,13 +60,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dashpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.propic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Compic)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.HeaderPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuPanel
             // 
-            this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.MenuPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MenuPanel.Controls.Add(this.pictureBox1);
             this.MenuPanel.Controls.Add(this.showHideMenubtn);
@@ -82,31 +82,8 @@
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuPanel.Location = new System.Drawing.Point(0, 35);
             this.MenuPanel.Name = "MenuPanel";
-            this.MenuPanel.Size = new System.Drawing.Size(50, 446);
+            this.MenuPanel.Size = new System.Drawing.Size(50, 445);
             this.MenuPanel.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Project_Management_software_Prototype.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // showHideMenubtn
-            // 
-            this.showHideMenubtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.showHideMenubtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showHideMenubtn.Image = global::Project_Management_software_Prototype.Properties.Resources._1280px_Menu__Web_Fundamentals__White__svg;
-            this.showHideMenubtn.Location = new System.Drawing.Point(26, 5);
-            this.showHideMenubtn.Name = "showHideMenubtn";
-            this.showHideMenubtn.Size = new System.Drawing.Size(18, 18);
-            this.showHideMenubtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.showHideMenubtn.TabIndex = 2;
-            this.showHideMenubtn.TabStop = false;
-            this.showHideMenubtn.Click += new System.EventHandler(this.showHideMenubtn_Click);
             // 
             // label1
             // 
@@ -121,70 +98,10 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Company Name";
             // 
-            // provpic
-            // 
-            this.provpic.BackColor = System.Drawing.Color.Transparent;
-            this.provpic.Image = global::Project_Management_software_Prototype.Properties.Resources._22_512;
-            this.provpic.Location = new System.Drawing.Point(4, 261);
-            this.provpic.Name = "provpic";
-            this.provpic.Size = new System.Drawing.Size(37, 33);
-            this.provpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.provpic.TabIndex = 3;
-            this.provpic.TabStop = false;
-            this.provpic.Click += new System.EventHandler(this.provpic_Click);
-            // 
-            // clipic
-            // 
-            this.clipic.BackColor = System.Drawing.Color.Transparent;
-            this.clipic.Image = global::Project_Management_software_Prototype.Properties.Resources.customer_group_512;
-            this.clipic.Location = new System.Drawing.Point(4, 218);
-            this.clipic.Name = "clipic";
-            this.clipic.Size = new System.Drawing.Size(37, 33);
-            this.clipic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.clipic.TabIndex = 3;
-            this.clipic.TabStop = false;
-            this.clipic.Click += new System.EventHandler(this.clipic_Click);
-            // 
-            // Dashpic
-            // 
-            this.Dashpic.BackColor = System.Drawing.Color.Transparent;
-            this.Dashpic.Image = global::Project_Management_software_Prototype.Properties.Resources.business_chart_diagram_icon_0;
-            this.Dashpic.Location = new System.Drawing.Point(4, 89);
-            this.Dashpic.Name = "Dashpic";
-            this.Dashpic.Size = new System.Drawing.Size(37, 33);
-            this.Dashpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Dashpic.TabIndex = 3;
-            this.Dashpic.TabStop = false;
-            this.Dashpic.Click += new System.EventHandler(this.Dashpic_Click);
-            // 
-            // propic
-            // 
-            this.propic.BackColor = System.Drawing.Color.Transparent;
-            this.propic.Image = global::Project_Management_software_Prototype.Properties.Resources.open_box_512;
-            this.propic.Location = new System.Drawing.Point(4, 175);
-            this.propic.Name = "propic";
-            this.propic.Size = new System.Drawing.Size(37, 33);
-            this.propic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.propic.TabIndex = 3;
-            this.propic.TabStop = false;
-            this.propic.Click += new System.EventHandler(this.propic_Click);
-            // 
-            // Compic
-            // 
-            this.Compic.BackColor = System.Drawing.Color.Transparent;
-            this.Compic.Image = global::Project_Management_software_Prototype.Properties.Resources._5_512;
-            this.Compic.Location = new System.Drawing.Point(4, 132);
-            this.Compic.Name = "Compic";
-            this.Compic.Size = new System.Drawing.Size(37, 33);
-            this.Compic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Compic.TabIndex = 3;
-            this.Compic.TabStop = false;
-            this.Compic.Click += new System.EventHandler(this.Compic_Click);
-            // 
             // providerbtn
             // 
-            this.providerbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.providerbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.providerbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.providerbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.providerbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.providerbtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.providerbtn.ForeColor = System.Drawing.Color.DimGray;
@@ -199,8 +116,8 @@
             // 
             // clientbtn
             // 
-            this.clientbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.clientbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.clientbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.clientbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.clientbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clientbtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientbtn.ForeColor = System.Drawing.Color.DimGray;
@@ -215,8 +132,8 @@
             // 
             // productbtn
             // 
-            this.productbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.productbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.productbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.productbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.productbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.productbtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productbtn.ForeColor = System.Drawing.Color.DimGray;
@@ -231,8 +148,8 @@
             // 
             // commandbtn
             // 
-            this.commandbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.commandbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.commandbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.commandbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.commandbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.commandbtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.commandbtn.ForeColor = System.Drawing.Color.DimGray;
@@ -247,8 +164,8 @@
             // 
             // DashBoardbtn
             // 
-            this.DashBoardbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.DashBoardbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.DashBoardbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.DashBoardbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.DashBoardbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DashBoardbtn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashBoardbtn.ForeColor = System.Drawing.Color.DimGray;
@@ -262,16 +179,16 @@
             this.DashBoardbtn.UseVisualStyleBackColor = false;
             this.DashBoardbtn.Click += new System.EventHandler(this.DashBoardbtn_Click);
             // 
-            // panel3
+            // MainPanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
-            this.panel3.Controls.Add(this.MenuPanel);
-            this.panel3.Controls.Add(this.HeaderPanel);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(840, 481);
-            this.panel3.TabIndex = 2;
+            this.MainPanel.BackColor = System.Drawing.Color.White;
+            this.MainPanel.Controls.Add(this.MenuPanel);
+            this.MainPanel.Controls.Add(this.HeaderPanel);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(840, 480);
+            this.MainPanel.TabIndex = 2;
             // 
             // HeaderPanel
             // 
@@ -337,18 +254,106 @@
             // 
             this.hideMenu.Tick += new System.EventHandler(this.hideMenu_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Project_Management_software_Prototype.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // showHideMenubtn
+            // 
+            this.showHideMenubtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.showHideMenubtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.showHideMenubtn.Image = global::Project_Management_software_Prototype.Properties.Resources._1280px_Menu__Web_Fundamentals__White__svg;
+            this.showHideMenubtn.Location = new System.Drawing.Point(26, 5);
+            this.showHideMenubtn.Name = "showHideMenubtn";
+            this.showHideMenubtn.Size = new System.Drawing.Size(18, 18);
+            this.showHideMenubtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.showHideMenubtn.TabIndex = 2;
+            this.showHideMenubtn.TabStop = false;
+            this.showHideMenubtn.Click += new System.EventHandler(this.showHideMenubtn_Click);
+            // 
+            // provpic
+            // 
+            this.provpic.BackColor = System.Drawing.Color.Transparent;
+            this.provpic.Image = global::Project_Management_software_Prototype.Properties.Resources._22_512;
+            this.provpic.Location = new System.Drawing.Point(4, 261);
+            this.provpic.Name = "provpic";
+            this.provpic.Size = new System.Drawing.Size(37, 33);
+            this.provpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.provpic.TabIndex = 3;
+            this.provpic.TabStop = false;
+            this.provpic.Click += new System.EventHandler(this.provpic_Click);
+            // 
+            // clipic
+            // 
+            this.clipic.BackColor = System.Drawing.Color.Transparent;
+            this.clipic.Image = global::Project_Management_software_Prototype.Properties.Resources.customer_group_512;
+            this.clipic.Location = new System.Drawing.Point(4, 218);
+            this.clipic.Name = "clipic";
+            this.clipic.Size = new System.Drawing.Size(37, 33);
+            this.clipic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.clipic.TabIndex = 3;
+            this.clipic.TabStop = false;
+            this.clipic.Click += new System.EventHandler(this.clipic_Click);
+            // 
+            // Dashpic
+            // 
+            this.Dashpic.BackColor = System.Drawing.Color.Transparent;
+            this.Dashpic.Image = global::Project_Management_software_Prototype.Properties.Resources.business_chart_diagram_icon_0;
+            this.Dashpic.Location = new System.Drawing.Point(4, 89);
+            this.Dashpic.Name = "Dashpic";
+            this.Dashpic.Size = new System.Drawing.Size(37, 33);
+            this.Dashpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Dashpic.TabIndex = 3;
+            this.Dashpic.TabStop = false;
+            this.Dashpic.Click += new System.EventHandler(this.Dashpic_Click);
+            // 
+            // propic
+            // 
+            this.propic.BackColor = System.Drawing.Color.Transparent;
+            this.propic.Image = global::Project_Management_software_Prototype.Properties.Resources.open_box_512;
+            this.propic.Location = new System.Drawing.Point(4, 175);
+            this.propic.Name = "propic";
+            this.propic.Size = new System.Drawing.Size(37, 33);
+            this.propic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.propic.TabIndex = 3;
+            this.propic.TabStop = false;
+            this.propic.Click += new System.EventHandler(this.propic_Click);
+            // 
+            // Compic
+            // 
+            this.Compic.BackColor = System.Drawing.Color.Transparent;
+            this.Compic.Image = global::Project_Management_software_Prototype.Properties.Resources._5_512;
+            this.Compic.Location = new System.Drawing.Point(4, 132);
+            this.Compic.Name = "Compic";
+            this.Compic.Size = new System.Drawing.Size(37, 33);
+            this.Compic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Compic.TabIndex = 3;
+            this.Compic.TabStop = false;
+            this.Compic.Click += new System.EventHandler(this.Compic_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(840, 481);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(840, 480);
+            this.ControlBox = false;
+            this.Controls.Add(this.MainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.MenuPanel.ResumeLayout(false);
             this.MenuPanel.PerformLayout();
+            this.MainPanel.ResumeLayout(false);
+            this.HeaderPanel.ResumeLayout(false);
+            this.HeaderPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showHideMenubtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.provpic)).EndInit();
@@ -356,9 +361,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dashpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.propic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Compic)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.HeaderPanel.ResumeLayout(false);
-            this.HeaderPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -370,7 +372,7 @@
         private System.Windows.Forms.Button clientbtn;
         private System.Windows.Forms.Button productbtn;
         private System.Windows.Forms.Button commandbtn;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel HeaderPanel;
         private System.Windows.Forms.Label reducebtn;
         private System.Windows.Forms.Label Closebtn;
